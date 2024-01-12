@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class=" text-[.9rem] sm:text-[1rem] md:text-[1.175rem] ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/8ac4ef4386.js" crossorigin="anonymous"></script>
+    
+</head>
+<body class="bg-[#ecedf6] dark:bg-[#131419] ">
+    <div class="dark:bg-transparent shadow-md shadow-[#c8d4d4] dark:shadow-[#171a1c] flex justify-between px-5 py-4 md:px-14 sm:px-10">
+        <div class="font-bold text-2xl text-[#f7d302ff]" >POKEMON</div>
+        <div  >
+            <div class="hidden dark:text-[#262a33ff]" id="sun">
+                <i class="fa-solid fa-sun fa-2xl "></i>
+            </div>
+            <div class="dark:text-white" id="moon">
+                <i class="fa-solid fa-moon fa-2xl "></i>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center mt-[20%]  md:mt-[5%] sm:mt-[17%]">
+        <div class=" border-gray-200 dark:border-gray-700 dark:text-white dark:bg-[#262a33ff] relative rounded-[0.5rem] bg-white px-5 min-w-[88%] sm:min-w-[63%] md:min-w-[37%]" >
+            <div class=" font-medium text-lg flex justify-end mb-5 relative top-6  ">
+                <div class="dark:bg-[#262a33ff] px-2 py-1  z-50 bg-white rounded-2xl ">
+                    <span>HP</span>
+                    <span id="hp"></span>
+                </div>
+            </div>
+            <div id="cDiv" class=" rounded-t-[1rem]  w-[100%] h-[40%]  top-0 left-0  absolute  bg-orange-200 rounded-b-[100%]"></div>
+            <div class="flex justify-center">
+                <img class="size-[180px] sm:size-[210px] md:size-[220px] z-50 " alt="" src=""> 
+            </div>
+            
+            <p class="font-bold text-center mt-3 text-[1.75rem]" id="name"></p>
+            <div class="text-white gap-28 flex justify-center mt-3 mb-6 font-semibold text-lg">
+                <div class="py-1 text-xl bg-white px-3 rounded-lg " id="spec1"></div>
+                <div class="py-1 text-xl bg-white px-3 rounded-lg " id="spec2"></div>
+            </div>
+            <div class="px-2 mb-4 mt-3 flex justify-between font-medium text-[1.1rem] text-center ">
+                <div>
+                    <p class="font-bold" id="attack"></p>
+                    <div class="text-slate-400">Attack</div>
+                </div>
+                <div>
+                    <p class="font-bold" id="defense"></p>
+                    <div class="text-slate-400">Defense</div>
+                </div>
+                <div>
+                    <p class="font-bold" id="speed"></p>
+                    <div class="text-slate-400">speed</div>
+                </div>
+            </div>
+
+
+        </div>
+        
+    </div>
+    <div class="flex justify-center mt-9">
+        <button class="px-20 py-3 text-xl md:text-lg md:px-16 md:py-2 font-semibold text-white bg-black rounded-[0.4rem]" id="btn">New Pokemon</button>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
